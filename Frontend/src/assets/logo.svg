@@ -1,0 +1,28 @@
+<svg width="900" height="200" viewBox="0 0 900 200" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="MitraKart">
+  <defs>
+    <style>
+      .icon { fill:#ff6a00; } /* Orange icon */
+      .brand { 
+        font: 900 96px/1.1 system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif;
+        fill:#ffffff;
+        dominant-baseline: middle;
+      }
+    </style>
+  </defs>
+
+  <!-- ICON scaled to match text height -->
+  <g transform="translate(40,20) scale(1.2)" class="icon">
+    <!-- speed lines -->
+    <rect x="0" y="46" width="40" height="10" rx="5"></rect>
+    <rect x="10" y="66" width="30" height="10" rx="5"></rect>
+    <rect x="20" y="86" width="24" height="10" rx="5"></rect>
+    <!-- cart body -->
+    <path d="M60 20 h150 a10 10 0 0 1 10 9 l10 86 a12 12 0 0 1 -12 13 H92 a12 12 0 0 1 -12 -9 L65 35 H45 a10 10 0 0 1 0 -20h20z"></path>
+    <!-- wheels -->
+    <circle cx="110" cy="140" r="16"></circle>
+    <circle cx="190" cy="140" r="16"></circle>
+  </g>
+
+  <!-- TEXT with normal space after icon -->
+  <text x="340" y="115" class="brand">MitraKart</text>
+</svg>
