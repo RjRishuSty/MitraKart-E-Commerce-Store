@@ -10,13 +10,13 @@ const SelectInput = ({ item }) => {
       <Select
         value={value}
         onChange={(e) => setValue(e.target.value)}
-        sx={{ color: "text.main" }}
+        sx={{ color: "text.secondary",height:'30px' }}
       >
         {item.options?.map((option) => (
           <MenuItem
             key={option.value}
             value={option.value}
-            sx={{ color: "text.main" }}
+            sx={{ color: "text.primary" }}
           >
             {option.label}
           </MenuItem>

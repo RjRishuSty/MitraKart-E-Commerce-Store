@@ -6,5 +6,38 @@
 }
 body{
     width: 100%;
+    background-color: #f5f0f0 !important;
     font-family: "Montserrat", sans-serif !important;
+}
+
+
+/* Slider lift and right icon  */
+.swiper-button-prev, .swiper-button-next{
+    color: #ff6a00 !important;
+    width: 40px !important;
+    height: 40px !important;
+    background-color: #fff0e6 !important;
+    border-radius: 100% !important;
+    box-shadow: 0px 0px 5px black !important;
+}
+.swiper-button-next:after{
+    font-size: 20px !important;
+    font-weight: bolder !important;
+}
+.swiper-button-prev:after{
+    font-size: 20px !important;
+    font-weight: bolder !important;
+}
+
+/* Category swiper */
+/* Pagination */
+.swiper-pagination-bullet{
+    background-color: #fff0e6 !important;
+    width: 15px !important;
+    height: 15px !important;
+}
+
+.swiper-pagination-bullet-active {
+    background: #ff6a00 !important;
+    font-size: 5rem !important;
 }

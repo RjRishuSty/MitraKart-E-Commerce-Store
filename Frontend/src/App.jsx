@@ -1,8 +1,9 @@
 import React from 'react'
-import Header from './components/Header'
 import Home from './pages/Home'
 import {createBrowserRouter, RouterProvider} from 'react-router-dom';
 import AppLayout from './Layouts/AppLayout';
+import HelpCenter from './pages/HelpCenter';
+import OrederTracking from './pages/OrederTracking';
 
 const App = () => {
 
@@ -14,6 +15,14 @@ const App = () => {
         {
           index:true,
           element:<Home/>
+        },
+        {
+          path:'help-center',
+          element:<HelpCenter/>
+        },
+        {
+          path:'order-tracking',
+          element:<OrederTracking/>
         }
       ]
     }
