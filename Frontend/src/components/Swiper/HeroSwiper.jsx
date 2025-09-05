@@ -16,7 +16,7 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 // Import required modules
-import { Navigation, Pagination } from "swiper/modules";
+import { Autoplay, Navigation, Pagination } from "swiper/modules";
 
 const sliderImages = [
   {
@@ -63,12 +63,16 @@ const HeroSwiper = () => {
     <Box sx={{py:2}}>
       <Swiper
         navigation={true}
-        modules={[Navigation, Pagination]}
+        modules={[Navigation, Pagination,Autoplay]}
         className="heroSwiper"
         slidesPerView={1.1} 
         centeredSlides={true} 
         spaceBetween={10} 
         pagination={{ clickable: true }}
+        autoplay={{
+          delay:2500,
+          disableOnInteraction:false,
+        }}
       >
         {sliderImages.map((item) => (
           <SwiperSlide key={item.id}>
